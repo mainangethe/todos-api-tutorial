@@ -80,7 +80,7 @@ RSpec.configure do |config|
 
   # start the transaction strategy as examples are run
   config.around(:each) do |example|
-    DatabaseCleaning.cleaning do
+    DatabaseCleaner.cleaning do
       example.run
     end
   end
