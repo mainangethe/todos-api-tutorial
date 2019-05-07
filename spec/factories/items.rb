@@ -12,10 +12,12 @@
 #  updated_at :datetime         not null
 #
 
-class Item < ApplicationRecord
-  # model association
-  belongs_to :todo
+FactoryBot.define do
+  factory :item do
+    sequence(:name) { |number| "Item_#{number}" }
+    done { rand(2) == 1 }
 
-  # validations
-  validates_presence_of :name
+    # associations
+    todo
+  end
 end

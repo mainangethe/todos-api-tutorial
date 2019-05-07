@@ -11,12 +11,9 @@
 #  updated_at :datetime         not null
 #
 
-class Todo < ApplicationRecord
-  # uuid generation
-
-  # model associations
-  has_many :items, dependent: :destroy
-
-  # validations
-  validates_presence_of :title, :created_by
+FactoryBot.define do
+  factory :todo do
+    sequence(:title) { |number| "title_#{number}" }
+    created_by { Faker::Name.name_with_middle }
+  end
 end
