@@ -170,7 +170,7 @@ RSpec.describe 'Items API' do
   end
 
   # DELETE /todos/:todo_id/items/:item_id
-  describe 'DELETE /todos/:id' do
+  describe 'DELETE /todos/:todo_id/items/:id' do
     before { delete "/todos/#{ todo_id }/items/#{ item_id }" }
 
     context "item exists" do
