@@ -56,8 +56,8 @@ gem 'active_model_serializers', '~> 0.10.9'
 gem 'annotate'
 # use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# use token based authentication
+gem 'jwt'
 gem 'rubocop'
 gem 'rubocop-performance'
 gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
-
-
