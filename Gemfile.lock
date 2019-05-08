@@ -47,14 +47,12 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    activeuuid (0.6.1)
-      activerecord (>= 3.1)
-      uuidtools
     annotate (2.7.5)
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 13.0)
     arel (9.0.0)
     ast (2.4.0)
+    bcrypt (3.1.12)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     builder (3.2.3)
@@ -188,7 +186,6 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unicode-display_width (1.5.0)
-    uuidtools (2.1.5)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -198,8 +195,8 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.9)
-  activeuuid
   annotate
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
   database_cleaner

@@ -54,6 +54,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'active_model_serializers', '~> 0.10.9'
 gem 'annotate'
+# use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
 gem 'rubocop'
 gem 'rubocop-performance'
 gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
+
+
