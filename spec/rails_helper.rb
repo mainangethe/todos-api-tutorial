@@ -88,5 +88,6 @@ RSpec.configure do |config|
   end
 
   # Load the support folder
-  config.include RequestSpecHelper, type: :request
+  config.include RequestSpecHelper
+  config.include ControllerSpecHelper
 end
