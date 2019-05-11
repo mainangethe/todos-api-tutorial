@@ -58,6 +58,7 @@ gem 'annotate'
 gem 'bcrypt', '~> 3.1.7'
 # use token based authentication
 gem 'jwt'
+gem 'will_paginate', '~> 3.1.0'
 gem 'rubocop'
 gem 'rubocop-performance'
 gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
